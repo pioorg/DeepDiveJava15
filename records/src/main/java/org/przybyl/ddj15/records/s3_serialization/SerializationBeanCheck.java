@@ -23,6 +23,7 @@ class SerializationBeanCheck implements Serializable {
 //	@com.fasterxml.jackson.annotation.JsonProperty
 	private final String justOneField;
 
+//	@java.beans.ConstructorProperties("justOneField")
 	public SerializationBeanCheck(String justOneField) {
 		this.justOneField = justOneField;
 		System.out.printf("We're creating bean for [%s]%n", justOneField);
