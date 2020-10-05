@@ -45,3 +45,7 @@ record NoSetters(int field) {
 //		this.field = newValue;
 //	}
 }
+
+record NoNative() {
+//	native int method();
+}

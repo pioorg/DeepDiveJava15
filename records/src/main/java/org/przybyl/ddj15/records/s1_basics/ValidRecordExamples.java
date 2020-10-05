@@ -17,6 +17,7 @@
 
 package org.przybyl.ddj15.records.s1_basics;
 
+import java.io.*;
 import java.util.*;
 import java.util.concurrent.atomic.*;
 
@@ -30,6 +31,8 @@ public class ValidRecordExamples {
 		System.out.println(noField);
 		var oneField = new OneField(42);
 		System.out.println(oneField);
+		var generic = new GenericRecord<>("42", 42);
+		System.out.println(generic);
 		var customMethods = new CustomMethods(17, 56);
 		customMethods.printHello("stranger");
 		System.out.println(StaticMembers.bar());
@@ -63,6 +66,8 @@ record NoField() {
 
 record OneField(int a) {
 }
+
+record GenericRecord<SER extends Serializable, NUM extends Number>(SER serializable, NUM number) {}
 
 record CustomMethods(int a, int b) {
 	public void printHello(String to) {
