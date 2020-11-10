@@ -25,13 +25,13 @@ public class TextBlocks {
         System.out.println(getPoemFromTextBlock());
         System.out.println(getPoemDetails());
         System.out.println(getPoemDetailsFromBlock());
-		System.out.println(getCowTown());
-		System.out.println(trimmed());
+        System.out.println(getCowTown());
+        System.out.println(trimmed());
         System.out.println(notTrimmed());
         System.out.println(getLoremIpsum().replaceAll("\n", " "));
         System.out.println(getLoremIpsumOneLine());
-		System.out.println(getCows());
-		indentationTests();
+        System.out.println(getCows());
+        indentationTests();
     }
 
     public static String getPoemFromText() {
@@ -71,8 +71,8 @@ public class TextBlocks {
     }
 
 	static void indentationTests() {
-//		println("""This doesn't compile, no new line after opening.""");
-//		println("""
+//		System.out.println("""This doesn't compile, no new line after opening.""");
+//		System.out.println("""
 //		This doesn't compile, no matching closing.");
 
 		System.out.println("""
@@ -118,9 +118,9 @@ public class TextBlocks {
 			""");
 
 		System.out.println("""
-		spaces
+        spaces
 			tabs
-		more spaces
+        more spaces
 				   """);
 
 		System.out.println("""
