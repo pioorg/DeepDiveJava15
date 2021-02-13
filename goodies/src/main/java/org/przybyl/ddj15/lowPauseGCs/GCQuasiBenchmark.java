@@ -30,7 +30,7 @@ import java.util.stream.*;
  * Let's try to run this the following ways (e.g. in /src/main/java/org/przybyl/ddj15/lowPauseGCs):
  *
  * time java -Xms4G -Xmx8G -XX:StartFlightRecording=disk=true,dumponexit=true,filename=G1.jfr,maxsize=1024m,settings=profile GCQuasiBenchmark.java
- * time java -XX:+UseParallelOldGC -Xms4G -Xmx8G -XX:StartFlightRecording=disk=true,dumponexit=true,filename=ParallelOld.jfr,maxsize=1024m,settings=profile GCQuasiBenchmark.java
+ * time java -XX:+UseParallelGC -Xms4G -Xmx8G -XX:StartFlightRecording=disk=true,dumponexit=true,filename=ParallelOld.jfr,maxsize=1024m,settings=profile GCQuasiBenchmark.java
  * //oops, removed in 14 ;-)
  * time java -XX:+UseConcMarkSweepGC -Xms4G -Xmx8G -XX:StartFlightRecording=disk=true,dumponexit=true,filename=CMS.jfr,maxsize=1024m,settings=profile GCQuasiBenchmark.java
  * time java -XX:+UseZGC -Xms4G -Xmx8G -XX:StartFlightRecording=disk=true,dumponexit=true,filename=ZGC.jfr,maxsize=1024m,settings=profile GCQuasiBenchmark.java
