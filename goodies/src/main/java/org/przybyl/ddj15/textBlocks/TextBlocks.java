@@ -136,10 +136,10 @@ public class TextBlocks {
 
 	public static String trimmed() {
 		return """
-            Du
-            hast
-            mich
-            gefragt
+            Du      
+            hast    
+            mich    
+            gefragt 
             """;
 	}
 
